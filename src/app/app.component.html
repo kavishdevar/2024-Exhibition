@@ -2,12 +2,155 @@
   <button mat-button (click)="accordion().openAll()">Expand All</button>
   <button mat-button (click)="accordion().closeAll()">Collapse All</button>
 </div> -->
+
+
+
 <mat-accordion>
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title> English </mat-panel-title>
       <mat-panel-description>
         Explore the world of English
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 3 and 4 </mat-panel-title>
+          <!-- <mat-panel-description>
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              <a mat-list-item (click)="showMap('1A', 'Class 3 and 4', 'English')"> A2 - II FLOOR - III A / B </a>
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class5 and 6 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              <a mat-list-item (click)="showMap('1A', 'Class 5 and 6', 'English')"> A2 - II FLOOR - III C / D</a>
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+
+
+    </mat-accordion>
+  </mat-expansion-panel>
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Science </mat-panel-title>
+      <mat-panel-description>
+        Enter The World Of Curiosity
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 3 and 4 </mat-panel-title>
+          <!-- <mat-panel-description>
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              <a mat-list-item (click)="showMap('1A', 'Class 3 and 4', 'English')"> 1A </a>
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Maths </mat-panel-title>
+      <mat-panel-description>
+        Enter the kingdom of numbers
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 3 and 4 </mat-panel-title>
+          <!-- <mat-panel-description>
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              <a mat-list-item (click)="showMap('1A', 'Class 3 and 4', 'English')"> 1A </a>
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Social Science </mat-panel-title>
+      <mat-panel-description>
+        Learn About The World
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel>
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 3 and 4 </mat-panel-title>
+          <!-- <mat-panel-description>
+          </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              <a mat-list-item (click)="showMap('1A', 'Class 3 and 4', 'English')"> 1A </a>
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+    </mat-accordion>
+  </mat-expansion-panel>
+
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Hindi/Sanskrit </mat-panel-title>
+      <mat-panel-description>
+        Explore the beauty of Indian Languages
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-accordion>
