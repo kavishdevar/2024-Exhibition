@@ -1,10 +1,8 @@
-<!-- <div class{style:} example-action-buttons>
+<!-- <div class="example-action-buttons">
   <button mat-button (click)="accordion().openAll()">Expand All</button>
   <button mat-button (click)="accordion().closeAll()">Collapse All</button>
 </div> -->
-
 <mat-accordion>
-
   <mat-expansion-panel>
     <mat-expansion-panel-header>
       <mat-panel-title> English </mat-panel-title>
@@ -19,235 +17,536 @@
           <!-- <mat-panel-description>
           </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('3A', 'Class 3 and 4', 'English')"> A2 - II
-            FLOOR - III A</a>
-            <a mat-list-item (click)="showMap('3B', 'Class 3 and 4', 'English')">  A2 - II
-            FLOOR - III B</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+              </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+               A2 - II FLOOR - III A / B
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
-      <mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
           <mat-panel-title> Class 5 and 6 </mat-panel-title>
-
-        </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A2 - II FLOOR - III C / D', 'Class 5 and 6', 'English')">
-            A2 - II FLOOR
-            - III C / D</a>
-        </mat-action-list>
-      </mat-expansion-panel>
-
-      <mat-expansion-panel>
-        <mat-expansion-panel-header>
-          <mat-panel-title> Class 7,8 and 9 </mat-panel-title>
           <!-- <mat-panel-description>
-      </mat-panel-description> -->
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A2 - II FLOOR - IV A / B', 'Class 7,8 and 9', 'English')">
-            A2 - II FLOOR
-            - III C / D</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A2 - II FLOOR - III C / D
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
+
+<!--  class 7,8,9  -->
+<mat-expansion-panel> <!---Copy From here-->
+  <mat-expansion-panel-header>
+    <mat-panel-title> Class 7,8 and 9 </mat-panel-title>
+    <!-- <mat-panel-description>
+  </mat-panel-description> -->
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel>
+      <mat-expansion-panel-header>
+        <mat-panel-title> Rooms </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-action-list>
+         A2 - II FLOOR - IV A / B
+      </mat-action-list>
+    </mat-expansion-panel>
+  </mat-accordion>
+</mat-expansion-panel>
+
+
+<!-- end class 7,8,9  -->
+      
     </mat-accordion>
   </mat-expansion-panel>
 
+<!-- Science-->
   <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <mat-panel-title> Hindi Sanskrit </mat-panel-title>
+      <mat-panel-title> Science </mat-panel-title>
       <mat-panel-description>
-        Explore the world of Hindi Sanskrit
+        Enter The World Of Curiosity
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-accordion>
-      <mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
           <mat-panel-title> Class 3 and 4 </mat-panel-title>
           <!-- <mat-panel-description>
-      </mat-panel-description> -->
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A1 -III FLOOR VI A / B', 'Class 3 and 4', 'Hindi Sanskrit')">
-            A1 -III FLOOR VI A / B</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A 1- II FLOOR XI A / B, IX B
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
-      <mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
-          <mat-panel-title> Class 5 and 6 </mat-panel-title>
+          <mat-panel-title> Class 5,6 and 7 </mat-panel-title>
           <!-- <mat-panel-description>
-    </mat-panel-description> -->
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A1- III FLOOR VI C', 'Class 5 and 6', 'Hindi Sanskrit')">
-            A1- III FLOOR VI C</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1 II FLOOR BIO LAB & IX A
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
 
-      <mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
-          <mat-panel-title> Class 7,8 and 9 </mat-panel-title>
-
+          <mat-panel-title> Class 8,9 and 11 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A1 -III FLOOR VI D', 'Class 7,8 and 9', 'Hindi Sanskrit')">
-            A1 -III FLOOR VI D</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1 II FLOOR PHYSICS LAB & X A
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
+
     </mat-accordion>
   </mat-expansion-panel>
+<!-- end science -->
+
+<!-- Math-->
   <mat-expansion-panel>
     <mat-expansion-panel-header>
-      <mat-panel-title> Math </mat-panel-title>
+      <mat-panel-title> Maths </mat-panel-title>
       <mat-panel-description>
-        Enter the Kingdom Of numbers
+        Enter the kingdom of numbers
       </mat-panel-description>
     </mat-expansion-panel-header>
     <mat-accordion>
-      <mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
           <mat-panel-title> Class 3 </mat-panel-title>
           <!-- <mat-panel-description>
-      </mat-panel-description> -->
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A2 - III FLOOR - V C V D / ', 'Class 3', 'Math')">
-            A2 - III FLOOR - V C V D</a>
-        </mat-action-list>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A2 - III FLOOR - V C V D
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
-      <mat-expansion-panel>
+
+
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
           <mat-panel-title> Class 4 and 5 </mat-panel-title>
           <!-- <mat-panel-description>
-    </mat-panel-description> -->
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A2 - III FLOOR - V A / B', 'Class 4 and 5', 'Math')">
-            A2 - III FLOOR - V A / B</a>
-        </mat-action-list>
-
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A2 - III FLOOR - V A / B
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
 
-      <mat-expansion-panel>
+
+      <mat-expansion-panel> <!---Copy From here-->
         <mat-expansion-panel-header>
           <mat-panel-title> Class 6,7 and 8 </mat-panel-title>
-
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
         </mat-expansion-panel-header>
-        <mat-action-list>
-          <a mat-list-item
-            (click)="showMap('A2 - III FLOOR - IV C / V E', 'Class 6,7 and 8', 'Math')">
-            A2 - III FLOOR - IV C / V E</a>
-        </mat-action-list>
-        <!-- ENTER STUFF HERE FOR ONE SUBJECT -->
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A2 - III FLOOR - IV C / V E
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
       </mat-expansion-panel>
+
+      
     </mat-accordion>
   </mat-expansion-panel>
-    <!--French-->
-    <mat-expansion-panel>
+
+  <!-- end math -->
+<!-- SST -->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Social Science </mat-panel-title>
+      <mat-panel-description>
+        Learn About The World
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel> <!---Copy From here-->
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 4 and 5 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A 1 -III FLOOR VIII A, B
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+      <mat-expansion-panel> <!---Copy From here-->
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 6,7,8,9 and 11 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1 III FLOOR VII A, B, C
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+
+
+
+    </mat-accordion>
+  </mat-expansion-panel>
+
+<!-- end SST -->
+
+
+<!-- Hindi Sanskrit-->
+  <mat-expansion-panel>
+    <mat-expansion-panel-header>
+      <mat-panel-title> Hindi/Sanskrit </mat-panel-title>
+      <mat-panel-description>
+        Explore the beauty of Indian Languages
+      </mat-panel-description>
+    </mat-expansion-panel-header>
+    <mat-accordion>
+      <mat-expansion-panel> <!---Copy From here-->
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 3 and 4 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1 -III FLOOR VI A / B
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel> <!---Copy From here-->
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 5 and 6 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1- III FLOOR VI C
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+
+      <mat-expansion-panel> <!---Copy From here-->
+        <mat-expansion-panel-header>
+          <mat-panel-title> Class 7,8 and 9 </mat-panel-title>
+          <!-- <mat-panel-description>
+        </mat-panel-description> -->
+        </mat-expansion-panel-header>
+        <mat-accordion>
+          <mat-expansion-panel>
+            <mat-expansion-panel-header>
+              <mat-panel-title> Rooms </mat-panel-title>
+              <!-- <mat-panel-description>
+            </mat-panel-description> -->
+            </mat-expansion-panel-header>
+            <mat-action-list>
+              A1 -III FLOOR VI D
+            </mat-action-list>
+          </mat-expansion-panel>
+        </mat-accordion>
+      </mat-expansion-panel>
+
+    </mat-accordion>
+  </mat-expansion-panel>
+
+<!--end Hindi Sanskrit-->
+
+<!-- French -->
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> French </mat-panel-title>
+    <mat-panel-description>
+      Enter the kingdom of numbers
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel> <!---Copy From here-->
       <mat-expansion-panel-header>
-        <mat-panel-title> French </mat-panel-title>
-        <mat-panel-description>
-          Enter the Kingdom Of numbers
-        </mat-panel-description>
-      </mat-expansion-panel-header>
-      <mat-accordion>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title> Class 3 </mat-panel-title>
-            <!-- <mat-panel-description>
+        <mat-panel-title> Class 5,6,7,8 and 9 </mat-panel-title>
+        <!-- <mat-panel-description>
       </mat-panel-description> -->
-          </mat-expansion-panel-header>
-
-          <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - V C V D / ', 'Class 3', 'Math')">
-              A2 - III FLOOR - V C V D</a>
-          </mat-action-list>
-        </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title> Class 4 and 5 </mat-panel-title>
-            <!-- <mat-panel-description>
-    </mat-panel-description> -->
-          </mat-expansion-panel-header>
-          <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - V A / B', 'Class 4 and 5', 'Math')">
-              A2 - III FLOOR - V A / B</a>
-          </mat-action-list>
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title> Class 6,7 and 8 </mat-panel-title>
-
-          </mat-expansion-panel-header>
-          <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - IV C / V E', 'Class 6,7 and 8', 'Math')">
-              A2 - III FLOOR - IV C / V E</a>
-          </mat-action-list>
-        </mat-expansion-panel>
-      </mat-accordion>
-      <!-- ENTER STUFF HERE FOR ONE SUBJECT -->
-    </mat-expansion-panel>
-    <!--end french -->
-
-    <!--SST -->
-    <mat-expansion-panel>
-      <mat-expansion-panel-header>
-        <mat-panel-title> SST </mat-panel-title>
-        <mat-panel-description>
-          Enter the Kingdom Of numbers
-        </mat-panel-description>
       </mat-expansion-panel-header>
       <mat-accordion>
         <mat-expansion-panel>
           <mat-expansion-panel-header>
-            <mat-panel-title> Class 3 </mat-panel-title>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
           </mat-expansion-panel-header>
           <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - V C V D / ', 'Class 3', 'Math')">
-              A2 - III FLOOR - V C V D</a>
+            A1 FIRST FLOOR MUSIC ROOM (HINDUSTANI)
           </mat-action-list>
         </mat-expansion-panel>
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title> Class 4 and 5 </mat-panel-title>
-
-          </mat-expansion-panel-header>
-          <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - V A / B', 'Class 4 and 5', 'Math')">
-              A2 - III FLOOR - V A / B</a>
-          </mat-action-list>
-
-        </mat-expansion-panel>
-
-        <mat-expansion-panel>
-          <mat-expansion-panel-header>
-            <mat-panel-title> Class 6,7 and 8 </mat-panel-title>
-
-          </mat-expansion-panel-header>
-          <mat-action-list>
-            <a mat-list-item
-              (click)="showMap('A2 - III FLOOR - IV C / V E', 'Class 6,7 and 8', 'Math')">
-              A2 - III FLOOR - IV C / V E</a>
-          </mat-action-list>
-          <!-- ENTER STUFF HERE FOR ONE SUBJECT -->
-        </mat-expansion-panel>
-
-        <!-- THEN THE OTEHR SUBJECT HERE -->
-        <!-- I SUGGEST YOU TO COPY AND PASTE -->
       </mat-accordion>
+    </mat-expansion-panel>
+
+
+  </mat-accordion>
+</mat-expansion-panel>
+<!-- end French-->
+
+
+<!-- Art-->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Art And Pottery </mat-panel-title>
+    <mat-panel-description>
+      Learn About The World
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel> <!---Copy From here-->
+      <mat-expansion-panel-header>
+        <mat-panel-title> Class 3-11 </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <mat-action-list>
+            A1 -I FLOOR ART ROOM, XI C          <br>
+            POTTERY - AREA BETWEEN STAGE AND NEW CANTEEN
+          </mat-action-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</mat-expansion-panel>
+
+<!-- end Art-->
+
+<!-- ICT -->
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> ICT </mat-panel-title>
+    <mat-panel-description>
+      Learn About The World
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel> <!---Copy From here-->
+      <mat-expansion-panel-header>
+        <mat-panel-title> Class 3-5 </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <mat-action-list>
+            A2 - III FLOOR - COMP LAB & IV D
+          </mat-action-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-expansion-panel>
+
+    <mat-expansion-panel> <!---Copy From here-->
+      <mat-expansion-panel-header>
+        <mat-panel-title> Class 6-11 </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <mat-action-list>
+            A 1-  I FLOOR COMPUTER LAB
+          </mat-action-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-expansion-panel>
+
+
+  </mat-accordion>
+</mat-expansion-panel>
+
+<!-- end ICT-->
+
+
+<!-- Music-->
+
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Music </mat-panel-title>
+    <mat-panel-description>
+      Learn About The World
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel> <!---Copy From here-->
+      <mat-expansion-panel-header>
+        <mat-panel-title> Class 6-11 </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <mat-action-list>
+            A 1 - 1 FLOOR MUSIC ROOM (WESTERN) 
+          </mat-action-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</mat-expansion-panel>
+
+<!--end Music-->
+
+<!-- Dance-->
+<mat-expansion-panel>
+  <mat-expansion-panel-header>
+    <mat-panel-title> Dance </mat-panel-title>
+    <mat-panel-description>
+      Learn About The World of Dance
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+  <mat-accordion>
+    <mat-expansion-panel> <!---Copy From here-->
+      <mat-expansion-panel-header>
+        <mat-panel-title> Class 3-11 </mat-panel-title>
+        <!-- <mat-panel-description>
+      </mat-panel-description> -->
+      </mat-expansion-panel-header>
+      <mat-accordion>
+        <mat-expansion-panel>
+          <mat-expansion-panel-header>
+            <mat-panel-title> Rooms </mat-panel-title>
+            <!-- <mat-panel-description>
+          </mat-panel-description> -->
+          </mat-expansion-panel-header>
+          <mat-action-list>
+            A2 - GROUND FLOOR DANCE ROOM
+          </mat-action-list>
+        </mat-expansion-panel>
+      </mat-accordion>
+    </mat-expansion-panel>
+
+  </mat-accordion>
+</mat-expansion-panel>
+<!-- end Dance -->
