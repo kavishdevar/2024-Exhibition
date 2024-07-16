@@ -1,0 +1,13 @@
+mat-expansion-panel {
+    background-color: rgb(32 39 32 / 64%);
+    mat-expansion-panel {
+        background-color: rgb(16 18 16 / 50%)
+    }
+}
+
+mat-accordion {
+    display: block;
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+}

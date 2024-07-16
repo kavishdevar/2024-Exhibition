@@ -4,10 +4,34 @@
 
 $theme: mat.define-theme((
   color: (
-    theme-type: light,
+    theme-type: dark,
     primary: mat.$green-palette,
   )
 ));
 
-html, body { height: 100%; @include mat.all-component-themes($theme); background-color: var(--mat-app-background-color);}
-body { margin: 8px; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html, body {
+  height: 100%; @include mat.all-component-themes($theme); 
+  background-color: var(--mat-app-background-color);
+  color: var(--mat-app-text-color);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+  
+
+body {
+  background: transparent;
+  backdrop-filter: blur(10px);
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+html {
+  background-image: url("/assets/imgs/bg.jpeg");
+  background-color: rgba(0, 0, 0, 0.36);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
