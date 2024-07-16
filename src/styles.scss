@@ -2,22 +2,21 @@
 
 @include mat.core();
 
-$theme: mat.define-theme((
-  color: (
-    theme-type: dark,
-    primary: mat.$green-palette,
-  )
-));
+$theme: mat.define-theme((color: (theme-type: dark,
+        primary: mat.$green-palette,
+      )));
 
-html, body {
-  height: 100%; @include mat.all-component-themes($theme); 
+html,
+body {
+  height: 100%;
+  @include mat.all-component-themes($theme);
   background-color: var(--mat-app-background-color);
   color: var(--mat-app-text-color);
   font-family: Roboto, "Helvetica Neue", sans-serif;
   margin: 0;
   padding: 0;
 }
-  
+
 
 body {
   background: transparent;
@@ -33,4 +32,22 @@ html {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
+}
+
+.title {
+  text-align: center !important;
+  font-family: Tiro Devanagari Hindi, serif !important;
+  font-size: 5rem !important;
+  margin-bottom: .25rem !important;
+  margin-top: 0.5em !important;
+}
+
+.quote {
+  text-align: center !important;
+  font-family: Playwrite PE, cursive !important;
+}
+
+.subtitle {
+  text-align: center !important;
+  font-size: 1.25rem !important;
 }
