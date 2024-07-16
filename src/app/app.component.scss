@@ -1,3 +1,4 @@
+@use '@angular/material' as mat;
 mat-expansion-panel {
     background-color: rgb(32 39 32 / 64%);
     mat-expansion-panel {
@@ -10,4 +11,21 @@ mat-accordion {
     margin: auto;
     min-width: 300px;
     max-width: 1000px;
+}
+
+@include mat.core();
+
+$theme: mat.define-theme((color: (theme-type: dark,
+        primary: mat.$green-palette,
+      )));
+
+:host {
+  height: 100%;
+  @include mat.fab-theme($theme);
+}
+
+.fab {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
 }
