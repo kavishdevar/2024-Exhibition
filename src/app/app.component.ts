@@ -1,7 +1,9 @@
 import { ChangeDetectionStrategy, Component, inject, Input, viewChild } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { MatAccordion, MatExpansionModule } from '@angular/material/expansion';
+import { MatExpansionModule } from '@angular/material/expansion';
 import { MatListModule } from '@angular/material/list';
+import { inject as injectanalytics} from "@vercel/analytics" 
+
 import {
   MAT_DIALOG_DATA,
   MatDialog,
@@ -28,7 +30,9 @@ export class AppComponent {
   showMap(room: string, grade: string, subject: string) {
     this.dialog.open(MapDialog, { data: { room, grade, subject } });
   };
-  // accordion = viewChild.required(MatAccordion);
+  constructor() {
+    injectanalytics();
+  }
 }
 
 export interface DialogData {
