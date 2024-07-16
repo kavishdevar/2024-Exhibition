@@ -1,7 +1,9 @@
 import { bootstrapApplication } from '@angular/platform-browser';
 import { appConfig } from './app/app.config';
 import { AppComponent } from './app/app.component';
-import { Analytics } from "@vercel/analytics/react"
+import { inject } from "@vercel/analytics/react"
+
+inject()
 
 bootstrapApplication(AppComponent, appConfig)
   .catch((err) => console.error(err));
