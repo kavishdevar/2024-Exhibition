@@ -34,10 +34,11 @@
       document.addEventListener('DOMContentLoaded', () => {
         const audio = document.querySelector('audio');
         audio.volume = 0.025;
-        audio.play()
+	setTimeout(1000)
+	audio.play()
       });
     </script>
-    <audio src="/assets/music/background.mp3">
+    <audio loop src="/assets/music/background.mp3" autoplay>
       <p>If you are reading this, it is because your browser does not support
         the audio element. </p>
     </audio>
