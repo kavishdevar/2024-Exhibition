@@ -16,6 +16,7 @@ import {
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -25,7 +26,7 @@ import { MatIconModule } from '@angular/material/icon';
 })
 
 export class AppComponent {
-  
+  musicPlaying = true;
   readonly dialog = inject(MatDialog);
   title = '2024Exhibition';
   showMap(room: string, grade: string, subject: string) {
@@ -37,6 +38,7 @@ export class AppComponent {
   toggleMusic() {
     const audio = document.querySelector('audio') as HTMLAudioElement;
     audio.paused ? audio.play() : audio.pause();
+    this.musicPlaying = !this.musicPlaying;
   }
   fab = document.querySelector('.fab');
 }

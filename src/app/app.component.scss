@@ -13,19 +13,6 @@ mat-accordion {
     max-width: 1000px;
 }
 
-@include mat.core();
-
-$theme: mat.define-theme((color: (theme-type: dark,
-        primary: mat.$green-palette,
-      )));
-
 :host {
   height: 100%;
-  @include mat.fab-theme($theme);
-}
-
-.fab {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
 }
