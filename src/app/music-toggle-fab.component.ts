@@ -23,6 +23,7 @@ export class MusicToggleFab {
     musicPlaying = false;
     toggleMusic() {
         this.musicPlaying = !this.musicPlaying;
+	if (this.musicPlaying){(document.querySelector('audio') as HTMLAudioElement).play()}
         this.icon = this.musicPlaying ? 'music_off' : 'music_note';
         (document.querySelector('audio') as HTMLAudioElement).muted = !this.musicPlaying;
     }
