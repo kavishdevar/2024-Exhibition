@@ -16,11 +16,12 @@ import {
 
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
+import { CdkScrollable } from '@angular/cdk/scrolling';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, MatExpansionModule, MatListModule, MatButtonModule, MatIconModule],
+  imports: [RouterOutlet, MatExpansionModule, MatListModule, MatButtonModule, MatIconModule, CdkScrollable],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

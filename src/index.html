@@ -1,47 +1,45 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    
-    <meta charset="utf-8">
-    <title>समन्वय</title>
-    <base href="/">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap"
-      rel="stylesheet">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap"
-      rel="stylesheet">
-  </head>
-  <body class="mat-typography">
-    <p class="subtitle">Welcome to DPS SEC-84, Gurugram <br>School Exhibition</p>
-    <h1 class="title">
-      समन्वय
-    </h1>
-    <h3 class="quote">
-      "Where Imagination Meets Creativity"
-    </h3>  
-    <app-root></app-root>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const audio = document.querySelector('audio');
-        audio.volume = 0.025;
-	setTimeout(1000)
-	audio.play()
-      });
-    </script>
-    <audio loop src="/assets/music/background.mp3" autoplay>
-      <p>If you are reading this, it is because your browser does not support
-        the audio element. </p>
-    </audio>
-    <music-toggle-fab></music-toggle-fab>
-  </body>
+<head>
+
+  <meta charset="utf-8">
+  <title>समन्वय</title>
+  <base href="/">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playwrite+PE:wght@100..400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&display=swap" rel="stylesheet">
+</head>
+
+<body class="mat-typography">
+  <p class="subtitle">Welcome to DPS SEC-84, Gurugram <br>School Exhibition</p>
+  <h1 class="title">
+    समन्वय
+  </h1>
+  <h3 class="quote">
+    "Where Imagination Meets Creativity"
+  </h3>
+  <app-root></app-root>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.querySelector('audio');
+      audio.volume = 0.025;
+      if (navigator.userActivation.isActive) {
+        audio.play();
+      }
+    });
+
+  </script>
+  <audio src="/assets/music/background.mp3" autoplay loop>
+    <p>If you are reading this, it is because your browser does not support
+      the audio element. </p>
+  </audio>
+  <music-toggle-fab></music-toggle-fab>
+</body>
 </html>
